@@ -40,7 +40,7 @@ server = HTTP::Server.new("0.0.0.0", 3000,
     ]) do |context|
       if context.request.path == "/crystal" || context.request.path == "/crystal/"
         context.response.content_type = "text/plain"
-        context.response.print "Crystal backend: Hello! from #{default_ip} in AZ-#{az} commit #{code_hash}"
+        context.response.print "Crystal backend: Hello Momma!!! from #{default_ip} in AZ-#{az} commit #{code_hash}"
       elsif context.request.path == "/health"
         context.response.content_type = "text/plain"
         context.response.print "Healthy!"
